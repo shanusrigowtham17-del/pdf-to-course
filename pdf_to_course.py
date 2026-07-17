@@ -32,7 +32,7 @@ def generate_course_from_text(text: str) -> dict:
     if len(text) > MAX_CHARS:
         text = text[:MAX_CHARS]
 
-    model = genai.GenerativeModel('gemini-2.5-flash-lite')
+    model = genai.GenerativeModel('gemini-3.5-flash')
 
     prompt = f"""
     You are an expert course creator. Based on the following extracted text from a PDF, 
