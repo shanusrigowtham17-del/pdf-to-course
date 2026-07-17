@@ -32,8 +32,7 @@ def generate_course_from_text(text: str) -> dict:
     if len(text) > MAX_CHARS:
         text = text[:MAX_CHARS]
 
-    model = genai.GenerativeModel('gemini-3.5-flash')
-
+    model = genai.GenerativeModel('gemini-3.1-flash-lite')
     prompt = f"""
     You are an expert course creator. Based on the following extracted text from a PDF, 
     generate a highly structured course outline in JSON format. 
