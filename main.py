@@ -77,7 +77,7 @@ def chat(payload: ChatRequest):
     try:
         # Reuse your existing Gemini setup — adjust this call to match
         # however generate_course_from_text talks to Gemini internally.
-        model = genai.GenerativeModel("gemini-1.5-flash")  # match your existing model choice
+        model = genai.GenerativeModel("gemini-3.1-flash-lite")  # matches pdf_to_course.py # match your existing model choice
         prompt = (
             f"You are answering questions about the following document.\n\n"
             f"DOCUMENT:\n{document_store['text'][:20000]}\n\n"  # crude truncation guard
