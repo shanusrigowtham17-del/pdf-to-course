@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from pdf_to_course import extract_text_from_pdf, generate_course_from_text
 import google.generativeai as genai  # adjust import to match whatever you use for Gemini calls
-
+from pdf_to_course import extract_text_from_pdf, generate_course_from_text, MAX_CHARS
 logger = logging.getLogger("pdf_to_course_api")
 logging.basicConfig(level=logging.INFO)
 
