@@ -1,4 +1,4 @@
-    import logging
+import logging
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware # <-- 1. IMPORTED CORS HERE
 from pdf_to_course import extract_text_from_pdf, generate_course_from_text
