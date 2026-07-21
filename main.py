@@ -14,7 +14,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://ai-study-lake.vercel.app"
+        "https://front-end-omega-swart.vercel.app/chatbot"
     ],
     allow_credentials=True,
     allow_methods=["*"],
